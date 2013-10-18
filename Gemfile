@@ -19,5 +19,6 @@ group :development, :test do
 	gem "capybara"
 	gem 'spork', '~> 1.0rc'
 	gem "guard-spork"
+	gem "factory_girl_rails"
 	# gem 'webrat'
 end

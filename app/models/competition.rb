@@ -1,8 +1,8 @@
 class Competition < ActiveRecord::Base
-	# attr_accessor :name
+	has_many :questions
 
-	# def intialize name = ""
-	# 	@name = name
-	# end
+
+	class Closed < StandardError
+	end
 	
 end

@@ -18,6 +18,21 @@ class TeamsController < ApplicationController
 		@team = Team.find params[:id]
 	end
 
+	def enter_competition
+		begin
+			#trick
+			@team = Team.find params[:id]
+			@competition = Competition.find params[:competition_id]
+			@enroll = @team.enter_competition @competition
+			render nothing: true
+
+		rescue Competition::Closed
+			redirect_to @team, alert: "Competition is closed."
+		end
+
+		
+	end
+
 	private
 
 	def team_params
