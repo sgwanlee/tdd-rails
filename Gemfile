@@ -15,5 +15,7 @@ gem "haml-rails"
 
 group :development, :test do
 	gem "guard-rspec"
+	gem "rspec-rails"
 	gem "capybara"
+	# gem 'webrat'
 end
