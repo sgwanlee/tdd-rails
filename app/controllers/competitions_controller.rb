@@ -23,6 +23,6 @@ class CompetitionsController < ApplicationController
 
 	def competition_params
 		# params[:competition]
-		puts params.require(:competition).permit(:name)
+		params.require(:competition).permit(:name)
 	end
 end

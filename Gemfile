@@ -17,5 +17,7 @@ group :development, :test do
 	gem "guard-rspec"
 	gem "rspec-rails"
 	gem "capybara"
+	gem 'spork', '~> 1.0rc'
+	gem "guard-spork"
 	# gem 'webrat'
 end
